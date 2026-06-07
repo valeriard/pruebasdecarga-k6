@@ -43,3 +43,25 @@
 ---
 
 ¿Quieres que añada un `package.json`, scripts de ejecución o ejemplos de CI para este test?
+
+## Generar reporte HTML
+
+Puedes generar un reporte HTML a partir del JSON que produce k6 usando el script Python incluido `json_to_html_report.py`.
+
+1. Ejecuta k6 y exporta el resumen a JSON (ejemplo):
+
+```bash
+k6 run --summary-export=results.json login_test.js
+```
+
+2. Convierte el JSON a HTML:
+
+```bash
+python json_to_html_report.py results.json report.html
+```
+
+3. Abre `report.html` en tu navegador.
+
+Notas:
+- Si no tienes `k6` instalado, sigue las instrucciones en la sección "Requisitos".
+- El script `json_to_html_report.py` genera un HTML simple con las métricas encontradas en el JSON.
