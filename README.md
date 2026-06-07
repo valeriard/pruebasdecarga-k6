@@ -30,19 +30,7 @@
 **Notas sobre el CSV**
 - El script espera que `users.csv` esté en el mismo directorio. Si el script usa `open()` o una ruta relativa, ajusta la ubicación del CSV o la ruta en el script.
 
-**Consejos**
-- Antes de lanzar pruebas de alta carga contra entornos reales, confirma con el equipo responsable del servicio.
-- Revisa la salida de k6 para métricas clave: **http_req_duration**, **checks**, **errors**.
-
-**Contribuciones**
-- Abre issues o PRs con mejoras al script o al dataset. Añade ejemplos reproducibles.
-
-**Licencia**
-- Este repositorio usa la licencia MIT por defecto. Cambia según prefieras.
-
 ---
-
-¿Quieres que añada un `package.json`, scripts de ejecución o ejemplos de CI para este test?
 
 ## Generar reporte HTML
 
@@ -65,3 +53,6 @@ python json_to_html_report.py results.json report.html
 Notas:
 - Si no tienes `k6` instalado, sigue las instrucciones en la sección "Requisitos".
 - El script `json_to_html_report.py` genera un HTML simple con las métricas encontradas en el JSON.
+
+**Autor**
+Valeria Rivera
